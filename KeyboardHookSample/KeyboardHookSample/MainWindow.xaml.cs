@@ -13,7 +13,7 @@ namespace KeyboardHookSample
         #region Dll Import
 
         [DllImport("user32.dll")]
-        static extern IntPtr SetWindowsHookEx(int idHook, LowLevelKeyboardProc callback, IntPtr hInstance, int threadId);
+        static extern IntPtr SetWindowsHookEx(int idHook, KeyboardProc callback, IntPtr hInstance, int threadId);
 
         [DllImport("user32.dll")]
         static extern bool UnhookWindowsHookEx(IntPtr hInstance);
@@ -28,8 +28,8 @@ namespace KeyboardHookSample
         static extern IntPtr LoadLibrary(string lpFileName);
         #endregion
 
-        private delegate IntPtr LowLevelKeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
-        private readonly LowLevelKeyboardProc _proc;
+        private delegate IntPtr KeyboardProc(int nCode, IntPtr wParam, IntPtr lParam);
+        private readonly KeyboardProc _proc;
         private static IntPtr hHook = IntPtr.Zero;
 
         private const int HC_ACTION = 0;

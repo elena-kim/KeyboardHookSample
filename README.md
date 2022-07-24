@@ -90,3 +90,8 @@ private static ulong HiWord(IntPtr ptr)
         return ((ulong)ptr >> 16) & 0xffff;
 }
 ```
+
+### Application
+F1부터 F6를 차례로 눌렀을 때 텍스트박스에 미리 설정해 둔 텍스트가 입력된다.
+
+<img width="396" alt="image" src="https://user-images.githubusercontent.com/74305823/180645499-f165fe04-3bee-417f-8b0f-ba016d49d3cd.png">

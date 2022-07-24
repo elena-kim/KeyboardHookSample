@@ -5,7 +5,7 @@ User32.dll을 사용한 Keyboard Hook 샘플입니다.
 ### Dll Import
 ```csharp
 [DllImport("user32.dll")]
-static extern IntPtr SetWindowsHookEx(int idHook, LowLevelKeyboardProc callback, IntPtr hInstance, int threadId);
+static extern IntPtr SetWindowsHookEx(int idHook, KeyboardProc callback, IntPtr hInstance, int threadId);
 
 [DllImport("user32.dll")]
 static extern bool UnhookWindowsHookEx(IntPtr hInstance);

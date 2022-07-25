@@ -98,4 +98,4 @@ F1부터 F6를 차례로 눌렀을 때 텍스트박스에 미리 설정해 둔 �
 
 ### Reference
 - [Implementing global hot keys in WPF](https://blog.magnusmontin.net/2015/03/31/implementing-global-hot-keys-in-wpf/)
-- 
+- [StackOverflow - LowLevelKeyboardProc is called twice with every keystroke](https://stackoverflow.com/questions/51986401/lowlevelkeyboardproc-is-called-twice-with-every-keystroke/51987473#51987473)
